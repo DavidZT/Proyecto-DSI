@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="Espacio1">
+        <input onclick="location.href='../index.html'" type="button" class="menu oscuro" value="⟵ Volver a Menú"></input>
+    </div>
+
+    <div id="Pantalla">
+
+        <div class="Modo">
+            <button onclick="Claro()" class="bColor"><i class="fas fa-sun"></i></button>
+            <button onclick="Oscuro()" class="bColor"><i class="fas fa-moon activado"></i></button>
+        </div>
+
+            <div class="arriba">
+
+                <div id="pantalla1"></div>
+                <div id="pantalla2"></div>
+
+            </div>
+
+            <div class="abajo">
+                <input type="button" onclick="borrar()" value="C" class="boton C">
+                <input type="button" class="boton vacio">
+                <input type="button" class="boton vacio">
+                <input type="button" onclick="agregar('/')" value="/" class="boton operadores">
+
+                <input type="button" onclick="agregar(7)" value="7" class="boton numeros">
+                <input type="button" onclick="agregar(8)" value="8" class="boton numeros">
+                <input type="button" onclick="agregar(9)" value="9" class="boton numeros">
+                <input type="button" onclick="agregar('*')" value="x" class="boton operadores">
+
+                <input type="button" onclick="agregar(4)" value="4" class="boton numeros">
+                <input type="button" onclick="agregar(5)" value="5" class="boton numeros">
+                <input type="button" onclick="agregar(6)" value="6" class="boton numeros">
+                <input type="button" onclick="agregar('-')"value="-" class="boton operadores">
+
+                <input type="button" onclick="agregar(1)" value="1" class="boton numeros">
+                <input type="button" onclick="agregar(2)" value="2" class="boton numeros">
+                <input type="button" onclick="agregar(3)" value="3" class="boton numeros">
+                <input type="button" onclick="agregar('+')" value="+" class="boton operadores">
+
+                <input type="button" onclick="agregar(0)" value="0" class="boton numeros">
+                <input type="button" class="boton vacio">
+                <input type="button" class="boton vacio">
+                <input type="button" onclick="resultado()" value="=" class="boton igual">
+            </div>        
+    </div>
+    <div class="Espacio2">    </div>
+</body>
+<script type="text/javascript" src="js/funciones.js"></script>
+</html>
